@@ -11,7 +11,7 @@
   font-size: 30px;
   text-decoration:underline;
   margin-left: 50px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .medical-day{
   width: 20vw;
@@ -25,6 +25,9 @@
   label {
     margin: .4rem 0;
   }
+  .date{
+    height: 22px;
+  }
 }
 .Download-link__PDF{
   width: 75px;
@@ -32,5 +35,6 @@
 
 .sub-title{
   font-size: 20px;
-  margin-left: 70px;
+  text-align: center;
+  border-bottom: double 5px #cccccc;
 }
