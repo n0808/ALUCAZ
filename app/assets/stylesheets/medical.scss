@@ -1,3 +1,36 @@
-// Place all the styles related to the medical controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.Top-main{
+  width: 100vw;
+  background-color: #ffffff;
+}
+.Top-main_header{
+  display: flex;
+  width: 100vw;
+}
+.medical-title{
+  width: 60vw;
+  font-size: 30px;
+  text-decoration:underline;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.medical-day{
+  width: 20vw;
+  font-size: 20px;
+  margin-top: 12px;
+  .label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+  }
+  .input,
+  label {
+    margin: .4rem 0;
+  }
+}
+.Download-link__PDF{
+  width: 75px;
+}
+
+.sub-title{
+  font-size: 20px;
+  margin-left: 70px;
+}

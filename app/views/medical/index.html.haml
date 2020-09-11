@@ -1,0 +1,12 @@
+.Top-main
+  .Top-main_header
+    .medical-title
+      訪問歯科診療　情報提供書 
+    .medical-day
+      %label{:for => "start"} 診療日:
+      %input#start{:max => "2200-12-31", :min => "2000-01-01", :name => "trip-start", :type => "date", :value => ""}/
+    .medical-download
+      = link_to image_tag('pdf_128.png', alt: 'PDF', class: 'Download-link__PDF'), root_path
+  .sub-title
+    ～歯科医師による居宅療養管理指導の情報提供、及び歯科衛生士等による居宅療養管理指導に係る歯科衛生士への指示内容～
+  
