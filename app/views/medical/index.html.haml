@@ -9,4 +9,19 @@
       = link_to image_tag('pdf_128.png', alt: 'PDF', class: 'Download-link__PDF'), root_path
   .Top-sub-title
     ～歯科医師による居宅療養管理指導の情報提供、及び歯科衛生士等による居宅療養管理指導に係る歯科衛生士への指示内容～
-  
+  .Top-central
+    .Top-central_box
+      .name-box
+        %label{:for => "name"} 氏名:
+        %input#name{:name => "name", :required => "", :type => "text", class: 'name'}様
+      .gender-box
+        .man-check_box
+          %input{:name => "gender", :type => "radio", :value => "man"}男
+        .woman-check_box
+          %input{:name => "gender", :type => "radio", :value => "woman"}女
+      .place-box
+        .home-check_box
+          %input{:name => "place", :type => "radio", :value => "home"}在宅
+        .facility-check_box
+          %input{:name => "place", :type => "radio", :value => "facility"}施設
+          %input#name{:name => "name", :required => "", :type => "text", placeholder: "名称", class: 'placename' }
