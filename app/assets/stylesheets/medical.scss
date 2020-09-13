@@ -1,3 +1,4 @@
+@import "mixin";
 .Top-main{
   width: 100vw;
   background-color: #ffffff;
@@ -72,6 +73,47 @@
         width: 238px;
         font-size: 20px;
       }
+    }
+  }
+}
+.Top-details{
+  margin-top: 20px;
+}
+.a-box{
+  display: flex;
+  .title-a{
+    @include box-size;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+  }
+  .symptoms{
+    @include box-size;
+    font-size: 20px;
+    height: 50px;
+    width: 400px;
+    line-height: 50px;
+  }
+  .menu-check_box{
+    @include box-size;
+    font-size: 15px;
+    height: 50px;
+    width: 350px;
+    line-height: 50px;
+    .meun{
+      margin-left: 10px;
+    }
+  }
+  .Doctor-name{
+    // border: 1px solid black;
+    margin-left: 5px;
+    font-size: 20px;
+    height: 50px;
+    width: 350px;
+    line-height: 50px;
+    .Doctorname{
+      height: 20px;
+      width: 200px;
     }
   }
 }

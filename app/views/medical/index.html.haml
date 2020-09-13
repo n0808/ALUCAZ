@@ -5,8 +5,8 @@
     .medical-day
       %label{:for => "start"} 診療日:
       %input#start{:max => "2200-12-31", :min => "2000-01-01", :name => "trip-start", :type => "date", :value => "", class: 'date'}/
-    .medical-download
-      = link_to image_tag('pdf_128.png', alt: 'PDF', class: 'Download-link__PDF'), root_path
+    -# .medical-download
+    -#   = link_to image_tag('pdf_128.png', alt: 'PDF', class: 'Download-link__PDF'), root_path
   .Top-sub-title
     ～歯科医師による居宅療養管理指導の情報提供、及び歯科衛生士等による居宅療養管理指導に係る歯科衛生士への指示内容～
   .Top-central
@@ -24,4 +24,27 @@
           %input{:name => "place", :type => "radio", :value => "home"}在宅
         .facility-check_box
           %input{:name => "place", :type => "radio", :value => "facility"}施設
-          %input#name{:name => "name", :required => "", :type => "text", placeholder: "名称", class: 'placename' }
+          %input#placename{:name => "name", :required => "", :type => "text", placeholder: "名称", class: 'placename' }
+  .Top-details
+    .Top-details_box
+      .a-box
+        .title-a
+          a
+        .symptoms
+          病状の経過、本日の処置内容、次回予定等
+        .menu-check_box
+          %input.meun{:name => "menu", :type => "checkbox", :value => "first-visit"}>/
+          初診
+          %input.meun{:name => "menu", :type => "checkbox", :value => "rediagnosis"}>/
+          再診
+          %input.meun{:name => "menu", :type => "checkbox", :value => "emergency"}>/
+          急患
+          %input.meun{:name => "menu", :type => "checkbox", :value => "dr-check"}>/
+          DRチェック
+          %input.meun{:name => "menu", :type => "checkbox", :value => "Re-first-visit"}>/
+          再初診
+        .Doctor-name
+          %label{:for => "name"} 歯科医師名:
+          %input#Doctorname{:name => "name", :required => "", :type => "text", class: 'Doctorname'}
+      .b-box
+      .c-box
