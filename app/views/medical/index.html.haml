@@ -32,19 +32,54 @@
           a
         .symptoms
           病状の経過、本日の処置内容、次回予定等
-        .menu-check_box
-          %input.meun{:name => "menu", :type => "checkbox", :value => "first-visit"}>/
+        .menu-diagnosis_box
+          %input.meun-diagnosis{:name => "menu", :type => "checkbox", :value => "0"}>/
           初診
-          %input.meun{:name => "menu", :type => "checkbox", :value => "rediagnosis"}>/
+          %input.meun-diagnosis{:name => "menu", :type => "checkbox", :value => "1"}>/
           再診
-          %input.meun{:name => "menu", :type => "checkbox", :value => "emergency"}>/
+          %input.meun-diagnosis{:name => "menu", :type => "checkbox", :value => "2"}>/
           急患
-          %input.meun{:name => "menu", :type => "checkbox", :value => "dr-check"}>/
+          %input.meun-diagnosis{:name => "menu", :type => "checkbox", :value => "3"}>/
           DRチェック
-          %input.meun{:name => "menu", :type => "checkbox", :value => "Re-first-visit"}>/
+          %input.meun-diagnosis{:name => "menu", :type => "checkbox", :value => "4"}>/
           再初診
         .Doctor-name
           %label{:for => "name"} 歯科医師名:
           %input#Doctorname{:name => "name", :required => "", :type => "text", class: 'Doctorname'}
+      .a-explanatory_text
+        %label{:for => "explanatory"}
+        %textarea#explanatory{:cols => "103", :name => "explanatory", :rows => "6", class: 'explanatory'}
       .b-box
+        .title-a
+          b
+        .symptoms
+          治療後の助言、及び療養生活をする上での留意点等
+      .b-important_text
+        %label{:for => "important"}
+        %textarea#important{:cols => "103", :name => "important", :rows => "6", class: 'important'}
       .c-box
+        .c-box
+        .title-c
+          c
+        .instructions
+          口腔ケアを行う歯科衛生士への指示内容
+      .c-instructions_box
+        .menu-instructions_box
+          %input.meun-instructions{:name => "menu", :type => "checkbox", :value => "0"}>/
+          ＴＢＩ
+          %input.meun-instructions{:name => "menu", :type => "checkbox", :value => "1"}>/
+          義歯管理
+          %input.meun-instructions{:name => "menu", :type => "checkbox", :value => "2"}>/
+          口腔清掃
+          %input.meun-instructions{:name => "menu", :type => "checkbox", :value => "3"}>/
+          運動
+          %input.meun-instructions{:name => "menu", :type => "checkbox", :value => "4"}>/
+          マッサージ
+          %input.meun-instructions{:name => "menu", :type => "checkbox", :value => "5"}>/
+          リハビリ
+          %input.meun-instructions{:name => "menu", :type => "checkbox", :value => "6"}>/
+          その他
+          %input#other{:name => "name", :required => "", :type => "text", class: 'other' }
+      .c-Part_text
+        %label{:for => "part"}
+        %textarea#part{:cols => "103", :name => "part", :rows => "2", placeholder: "（具体的部位・内容）", class: 'part'}

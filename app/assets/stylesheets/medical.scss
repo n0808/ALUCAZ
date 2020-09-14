@@ -79,6 +79,10 @@
 .Top-details{
   margin-top: 20px;
 }
+.Top-details_box{
+  border-bottom: double 5px #cccccc;
+  padding-bottom: 10px;
+}
 .a-box{
   display: flex;
   .title-a{
@@ -94,19 +98,19 @@
     width: 400px;
     line-height: 50px;
   }
-  .menu-check_box{
+  .menu-diagnosis_box{
     @include box-size;
     font-size: 15px;
     height: 50px;
     width: 350px;
     line-height: 50px;
-    .meun{
+    .meun-diagnosis{
       margin-left: 10px;
     }
   }
   .Doctor-name{
     // border: 1px solid black;
-    margin-left: 5px;
+    margin-left: 20px;
     font-size: 20px;
     height: 50px;
     width: 350px;
@@ -116,4 +120,65 @@
       width: 200px;
     }
   }
+}
+.a-explanatory_text{
+  margin-left: 70px;
+  .explanatory{
+    font-size: 14px;
+  }
+}
+.b-box{
+  display: flex;
+  .title-a{
+    @include box-size;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+  }
+  .symptoms{
+    @include box-size;
+    font-size: 20px;
+    height: 50px;
+    width: 480px;
+    line-height: 50px;
+  }
+}
+.b-important_text{
+  margin-left: 70px;
+  .important{
+    font-size: 14px;
+  }
+}
+.c-box{
+  display: flex;
+  .title-c{
+    @include box-size;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+  }
+  .instructions{
+    @include box-size;
+    font-size: 20px;
+    height: 50px;
+    width: 380px;
+    line-height: 50px;
+  }
+}
+.c-instructions_box{
+  margin-left: 70px;
+  .menu-instructions_box{
+    font-size: 17px;
+  }
+}
+.meun-instructions{
+  margin-left: 5px;
+}
+.other{
+  width: 156px;
+}
+
+.c-Part_text{
+  margin-left: 70px;
+  margin-top: 5px;
 }
